@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingVertical="32dp"
+    android:paddingHorizontal="24dp"
+    android:background="#EDF6FF"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_header"/>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's fill your tummy!"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order something right now"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_roundedbox">
+        <ImageView
+            android:id="@+id/ivConfirmOrder"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:src="@drawable/kareraisu"
+            android:layout_marginRight="24dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tvConfirmOrderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contoh Nama"
+                android:textStyle="bold"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/tvConfirmOrderPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 123000"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity : "/>
+                <EditText
+                    android:id="@+id/etConfirmOrderQuantitiy"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOrderMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/shape_primarybutton"
+        android:text="Order More"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Develop by 2301907901"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

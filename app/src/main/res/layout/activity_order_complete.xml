@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingVertical="32dp"
+    android:paddingHorizontal="24dp"
+    android:background="#EDF6FF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EzyFoody"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/dark_utama"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnMainMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:paddingHorizontal="16dp"
+            android:background="@drawable/shape_primarybutton"
+            android:text="Main Menu"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="16dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="153dp"
+            android:layout_height="153dp"
+            android:src="@drawable/sushiroll"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textAlignment="center"
+            android:text="Yay, Order Complete!!"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_utama"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enjoy your meal :)"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvTotalSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total : "
+            android:textColor="@color/dark_utama"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvListSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_list_my_order"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Develop by 2301907901"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
